@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Mood → Movies</title>
+<link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>🎬 Mood → Movies</h1>
+      <p class="subtitle">Tell me how you feel. I'll find something worth watching.</p>
+    </header>
+
+    <section class="input-card">
+      <div class="emotion-grid" id="emotionGrid"></div>
+
+      <div class="divider"><span>or describe it</span></div>
+
+      <form id="textForm" class="text-form">
+        <input
+          type="text"
+          id="textInput"
+          placeholder="e.g. &quot;had a rough day, kind of drained&quot;"
+          autocomplete="off"
+        />
+        <button type="submit">Find movies</button>
+      </form>
+    </section>
+
+    <section id="resultArea"></section>
+  </div>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>

@@ -43,15 +43,18 @@ Built to replace a scraping-based script with a proper client/server architectur
 4. `omdb_client.fetch_movies_by_genres()` pulls a shuffled set of curated titles for those genres from `movie_catalog.py`, then fetches live details for each from OMDb in parallel using a thread pool.
 5. Results are rendered as poster cards in the frontend.
 
-## Project structure   
+## Project structure
+
+\`\`\`
 mood-movies/
-├── main.py # FastAPI app + routes
-├── emotion_engine.py # emotion definitions + text-based detection
-├── omdb_client.py # OMDb API wrapper
-├── movie_catalog.py # curated title lists per genre
+├── main.py              # FastAPI app + routes
+├── emotion_engine.py    # emotion definitions + text-based detection
+├── omdb_client.py        # OMDb API wrapper
+├── movie_catalog.py      # curated title lists per genre
 ├── requirements.txt
 ├── .gitignore
 └── static/
-├── index.html
-├── style.css
-└── script.js
+    ├── index.html
+    ├── style.css
+    └── script.js
+\`\`\`

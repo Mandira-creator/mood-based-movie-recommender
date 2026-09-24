@@ -44,3 +44,14 @@ Built to replace a scraping-based script with a proper client/server architectur
 5. Results are rendered as poster cards in the frontend.
 
 ## Project structure   
+mood-movies/
+├── main.py # FastAPI app + routes
+├── emotion_engine.py # emotion definitions + text-based detection
+├── omdb_client.py # OMDb API wrapper
+├── movie_catalog.py # curated title lists per genre
+├── requirements.txt
+├── .gitignore
+└── static/
+├── index.html
+├── style.css
+└── script.js
